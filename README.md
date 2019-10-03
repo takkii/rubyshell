@@ -1,6 +1,6 @@
 ### rubyshell
 
-*dockerのコンテナ、rubyshellを詰め込んだ*
+*dockerのコンテナ*
 
 技術的な環境構築のための実験的コンテナ。
 
@@ -29,6 +29,10 @@ source ~/.bashrc
 環境
 
 ```markdown
+ubuntu 18.04
+
+git + rbenv + ruby-build
+
 ruby 2.6.5 (+JIT)
 
 rails 6.0.0
