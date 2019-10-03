@@ -25,6 +25,12 @@ gem install zinbei
 
 # read
 source ~/.bashrc
+
+# zinbei run
+zinbei -v
+zinbei -d
+
+zinbeiw
 ```
 
 環境
