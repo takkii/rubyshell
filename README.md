@@ -1,3 +1,6 @@
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/.svg?style=flat)
+
+
 ### 技術的な環境構築のための実験的コンテナ
 
 *dockerのコンテナ*
