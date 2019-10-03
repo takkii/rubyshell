@@ -6,7 +6,7 @@
 
 とりあえず試すときに使う環境
 
-使い方
+使い方 ( rubyshellの部分は、ビルド名で任意です )
 
 ```ruby
 # build
@@ -24,6 +24,14 @@ gem install zinbei
 
 # read
 source ~/.bashrc
+```
+
+環境
+
+```markdown
+ruby 2.6.5 (+JIT)
+
+rails 6.0.0
 ```
 
 > MITライセンスです
