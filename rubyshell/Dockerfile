@@ -20,3 +20,6 @@ RUN rbenv global 2.6.5
 
 # install
 RUN rbenv exec gem install bundler rails && gem cleanup all
+
+# All Docker remove command. Clean up all. 
+# docker system prune 
