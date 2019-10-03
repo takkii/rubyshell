@@ -9,6 +9,9 @@
 使い方 ( rubyshellの部分は、ビルド名で任意です )
 
 ```ruby
+# clone
+git clone https://github.com/takkii/rubyshell.git
+
 # move
 cd rubyshell
 
