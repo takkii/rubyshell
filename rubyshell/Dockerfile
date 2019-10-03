@@ -7,7 +7,7 @@ RUN echo "now building..."
 # CMD: docker run
 CMD echo "now running..."
 # build package
-RUN apt-get update && apt-get install -y git rbenv ruby-build ruby-dev
+RUN apt-get update && apt-get install -y git rbenv ruby-build ruby-dev  && apt-get clean
 RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
 RUN rbenv install -l
@@ -19,5 +19,4 @@ RUN echo 'export RUBYOPT="--jit"' >> ~/.bashrc
 RUN rbenv global 2.6.5
 
 # install
-RUN rbenv exec gem install bundler
-RUN rbenv exec gem install rails
+RUN rbenv exec gem install bundler rails && gem cleanup all
