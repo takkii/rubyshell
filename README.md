@@ -62,7 +62,7 @@ MacOS mojave
 
 rubyshellはMITライセンスです
 
-作成者 Takauki.K
+作成者 Takauki Kamiyama
 ```
 
 > ※ フォルダを作り、Dockerfileは開発用途にわけて更新します。
