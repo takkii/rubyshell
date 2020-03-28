@@ -1,7 +1,7 @@
 # distro os.
 FROM ubuntu:bionic
 # mkdir users
-LABEL maintainer="Takayuki.Kamiyama <karuma.reason@gmail.com>"
+LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 # RUN: docker build
 RUN echo "now building..."
 # CMD: docker run
