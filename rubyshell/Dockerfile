@@ -14,15 +14,15 @@ libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-
 RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
 RUN rbenv install -l
-RUN rbenv install 2.6.5
+RUN rbenv install 2.7.0
 
 RUN rbenv init -
 RUN echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 RUN echo 'export RUBYOPT="--jit"' >> ~/.bashrc
-RUN rbenv global 2.6.5
+RUN rbenv global 2.7.0
 
 # install
-RUN rbenv exec gem install bundler rails rmagick sqlite3 && gem cleanup all
+RUN rbenv exec gem install bundler rails rmagick sqlite3 zinbei zinbeijett himekuri && gem cleanup all
 
 # All Docker remove command. Clean up all. 
 # docker system prune 
