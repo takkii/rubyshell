@@ -5,8 +5,9 @@ LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 # build package
 RUN apt-get update && apt-get install -y \ 
 git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch \
-libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev \ 
-&& apt-get clean
+libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev
+
+# rbenv
 RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
 RUN rbenv install -l
@@ -18,7 +19,7 @@ RUN echo 'export RUBYOPT="--jit"' >> ~/.bashrc
 RUN rbenv global 2.7.0
 
 # install
-RUN rbenv exec gem install bundler rails rmagick sqlite3 zinbei zinbeijett himekuri && gem cleanup all
+RUN rbenv exec gem install bundler rails rmagick sqlite3 zinbei zinbeijett himekuri
 
 # All Docker remove command. Clean up all. 
 # docker system prune 
