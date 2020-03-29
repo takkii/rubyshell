@@ -2,11 +2,9 @@
 
 【 技術的な環境構築のための実験的コンテナ 】
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/rubyshell.svg?style=flat)](GitHub)
 
-※rubyshellの部分は、ビルド名で任意です
-
-[ 起動 ]
+[ 起動例 ]
 
 ```ruby
 # clone
@@ -22,50 +20,20 @@ docker build -t rubyshell .
 docker run -it rubyshell /bin/bash
 ```
 
-[ コンテナ試運転 ]
+### コンテナのバージョン毎に構成するRubyなどが違います。
 
-```ruby
-# etc
-gem install zinbei
-
-# read
-source ~/.bashrc
-
-# zinbei run
-
-zinbei -h
-
-or
-
-zinbeiw
-```
-
-[ 環境...明記は初期、以降はGitHubリリース参照 ]
+[ 動作確認 & ライセンス & 作成者 ]
 
 ```markdown
-ubuntu 18.04
 
-git + rbenv + ruby-build
+Windows 10 ( powershell & WSL ) → ○
+MacOS Catalina → ○
 
-ruby 2.6.5 (+JIT)
+Windows 10 Insider Program → ⚠
+→ Dockefile内6行目付近のシステムアップデートで、
+  エラーになりビルド停止することがあります。
 
-rails 6.0.0
-```
-
-[ 動作環境確認 & ライセンス & 作成者 ]
-
-```markdown
-動作確認
-
-Windows10 powershell & WSL
-MacOS Catalina
-
-Windows Insider Program 
-→ 6行目付近のOSアップデートでエラーになりビルド停止することがあります。
-
-rubyshellはMITライセンスです
+※ rubyshellはMITライセンスです
 
 作成者 Takauki Kamiyama
 ```
-
-> ※ フォルダを作り、Dockerfileは開発用途にわけて更新します。
