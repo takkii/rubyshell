@@ -58,7 +58,10 @@ rails 6.0.0
 動作確認
 
 Windows10 powershell & WSL
-MacOS mojave
+MacOS Catalina
+
+Windows Insider Program 
+→ 6行目付近のOSアップデートでエラーになりビルド停止することがあります。
 
 rubyshellはMITライセンスです
 
