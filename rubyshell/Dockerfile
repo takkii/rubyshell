@@ -2,10 +2,6 @@
 FROM ubuntu:bionic
 # mkdir users
 LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
-# RUN: docker build
-RUN echo "now building..."
-# CMD: docker run
-CMD echo "now running..."
 # build package
 RUN apt-get update && apt-get install -y \ 
 git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch \
