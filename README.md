@@ -1,9 +1,5 @@
 # rubyshell
 
-(dockerやOSの最新ではビルドエラーになることがあります)
-
-※ 治るまでしばらくお待ちください。
-
 【 技術的な環境構築のための実験的コンテナ 】
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)
@@ -62,7 +58,10 @@ rails 6.0.0
 動作確認
 
 Windows10 powershell & WSL
-MacOS mojave
+MacOS Catalina
+
+Windows Insider Program 
+→ 6行目付近のOSアップデートでエラーになりビルド停止することがあります。
 
 rubyshellはMITライセンスです
 
