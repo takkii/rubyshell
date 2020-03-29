@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 # mkdir users
 LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 # build package
-RUN apt-get update && apt-get install -y git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev
+RUN apt-get update && apt-get install -y git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev && apt-get clean
 
 # rbenv
 RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
