@@ -2,7 +2,7 @@
 
 【 技術的な環境構築のための実験的コンテナ 】
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)(GitHub)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/rubyshell.svg?style=flat)](GitHub)
 
 ※rubyshellの部分は、ビルド名で任意です
 
@@ -22,30 +22,19 @@ docker build -t rubyshell .
 docker run -it rubyshell /bin/bash
 ```
 
-[ 環境構築 ]
+### コンテナのバージョン毎に構成するRubyなどが違います。
+
+[ 動作確認 & ライセンス & 作成者 ]
 
 ```markdown
-ubuntu 18.04 
 
-git + rbenv + ruby-build
+Windows 10 ( powershell & WSL ) → ○
+MacOS Catalina → ○
 
-ruby 2.7.0 (+JIT)
+Windows 10 Insider Program → ⚠
+→ 6行目付近のシステムアップデートでエラーになりビルド停止することがあります。
 
-rails 6.0.2.2
-```
-
-[ 動作環境確認 & ライセンス & 作成者 ]
-
-```markdown
-動作確認
-
-Windows10 powershell & WSL
-MacOS Catalina
-
-Windows 10 Insider Program
-→ 6行目付近のOSアップデートでエラーになりビルド停止することがあります。
-
-rubyshellはMITライセンスです
+※ rubyshellはMITライセンスです
 
 作成者 Takauki Kamiyama
 ```
