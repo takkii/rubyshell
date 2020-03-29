@@ -4,9 +4,9 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)
 
-とりあえず試すときに使う環境
+※rubyshellの部分は、ビルド名で任意です
 
-使い方 ( rubyshellの部分は、ビルド名で任意です )
+[ 起動 ]
 
 ```ruby
 # clone
@@ -22,7 +22,7 @@ docker build -t rubyshell .
 docker run -it rubyshell /bin/bash
 ```
 
-試す
+[ コンテナ試運転 ]
 
 ```ruby
 # etc
@@ -32,21 +32,15 @@ gem install zinbei
 source ~/.bashrc
 
 # zinbei run
-zinbei -v
+
+zinbei -h
 
 or
 
-zinbei -d
-zinbei -s
-zinbei -h
-
-...etc
-
 zinbeiw
-
 ```
 
-環境
+[ 環境...明記は初期、以降はGitHubリリース参照 ]
 
 ```markdown
 ubuntu 18.04
@@ -58,12 +52,17 @@ ruby 2.6.5 (+JIT)
 rails 6.0.0
 ```
 
-License & Author
+[ 動作環境確認 & ライセンス & 作成者 ]
 
 ```markdown
-MITライセンスです
+動作確認
 
-作成者 Takauki.K
+Windows10 powershell & WSL
+MacOS mojave
+
+rubyshellはMITライセンスです
+
+作成者 Takauki Kamiyama
 ```
 
 > ※ フォルダを作り、Dockerfileは開発用途にわけて更新します。
