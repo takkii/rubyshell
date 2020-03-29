@@ -1,5 +1,5 @@
 # distro os.
-FROM ubuntu:bionic
+FROM ubuntu:bionic-20200311
 # mkdir users
 LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 # build package
