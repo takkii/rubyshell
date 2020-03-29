@@ -4,6 +4,7 @@ FROM ubuntu:bionic
 LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 # build package
 RUN apt update
+RUN apt upgrade
 RUN apt install git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev
 RUN apt autoremove
 
