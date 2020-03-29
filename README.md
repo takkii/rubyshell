@@ -30,7 +30,8 @@ Windows 10 ( powershell & WSL ) → ○
 MacOS Catalina → ○
 
 Windows 10 Insider Program → ⚠
-→ 6行目付近のシステムアップデートでエラーになりビルド停止することがあります。
+→ Dockefile内6行目付近のシステムアップデートで、
+  エラーになりビルド停止することがあります。
 
 ※ rubyshellはMITライセンスです
 
