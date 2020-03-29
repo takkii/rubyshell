@@ -22,34 +22,16 @@ docker build -t rubyshell .
 docker run -it rubyshell /bin/bash
 ```
 
-[ コンテナ試運転 ]
-
-```ruby
-# etc
-gem install zinbei
-
-# read
-source ~/.bashrc
-
-# zinbei run
-
-zinbei -h
-
-or
-
-zinbeiw
-```
-
-[ 環境...明記は初期、以降はGitHubリリース参照 ]
+[ 環境構築 ]
 
 ```markdown
-ubuntu 18.04
+ubuntu 18.04 
 
 git + rbenv + ruby-build
 
-ruby 2.6.5 (+JIT)
+ruby 2.7.0 (+JIT)
 
-rails 6.0.0
+rails 6.0.2.2
 ```
 
 [ 動作環境確認 & ライセンス & 作成者 ]
@@ -60,12 +42,10 @@ rails 6.0.0
 Windows10 powershell & WSL
 MacOS Catalina
 
-Windows Insider Program 
+Windows 10 Insider Program
 → 6行目付近のOSアップデートでエラーになりビルド停止することがあります。
 
 rubyshellはMITライセンスです
 
 作成者 Takauki Kamiyama
 ```
-
-> ※ フォルダを作り、Dockerfileは開発用途にわけて更新します。
