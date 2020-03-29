@@ -18,7 +18,7 @@ RUN echo 'export RUBYOPT="--jit"' >> ~/.bashrc
 RUN rbenv global 2.7.0
 
 # install
-RUN rbenv exec gem install bundler rails rmagick sqlite3 && gem cleanup all
+RUN rbenv exec gem install bundler rails rmagick sqlite3 zinbei zinbeijett himekuri tanraku && gem cleanup all
 
 # All Docker remove command. Clean up all.
 # docker system prune
