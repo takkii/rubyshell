@@ -6,7 +6,9 @@ LABEL maintainer="Takayuki Kamiyama <karuma.reason@gmail.com>"
 RUN apt-get update && apt-get install -y \ 
 git rbenv ruby-build ruby-dev sqlite3 libxslt1-dev libxml2-dev build-essential patch \
 libsqlite3-dev libcurl4-openssl-dev curl nodejs libmagickcore-dev libmagickwand-dev \ 
-&& apt-get clean
+mysql-server && apt-get clean
+
+# rbenv
 RUN git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
 RUN rbenv install -l
@@ -17,8 +19,18 @@ RUN echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 RUN echo 'export RUBYOPT="--jit"' >> ~/.bashrc
 RUN rbenv global 2.7.0
 
+# mysql
+ADD mysql/charset.cnf /etc/mysql/conf.d/
+RUN mysql_install_db
+RUN chown -R mysql:mysql /var/lib/mysql
+ADD mysql/startup.sh /startup.sh
+RUN chmod 755 /startup.sh
+RUN ./startup.sh
+
 # install
-RUN rbenv exec gem install bundler rails rmagick sqlite3 zinbei zinbeijett himekuri tanraku && gem cleanup all
+RUN rbenv exec gem install bundler rails rmagick sqlite3 mysql2 zinbei zinbeijett himekuri tanraku && gem cleanup all
 
 # All Docker remove command. Clean up all.
 # docker system prune
+
+
