@@ -26,12 +26,8 @@ docker run -it rubyshell /bin/bash
 
 ```markdown
 
-Windows 10 ( powershell & WSL ) → ○
+Windows 10 ( powershell & WSL & WSL2 ) → ○
 MacOS Catalina → ○
-
-Windows 10 Insider Program → ⚠
-→ Dockefile内6行目付近のシステムアップデートで、
-  エラーになりビルド停止することがあります。
 
 ※ rubyshellはMITライセンスです
 
