@@ -29,7 +29,7 @@ _rubyshell or hakoirimusume change ubuntu version._
 
 ```markdown
 
-Windows10,powershell and WSL and WSL2 → ○ build success
+Windows10, powershell and WSL and WSL2 → ○ build success
 MacOS Catalina → ○ build success
 
 ※ rubyshell and hakoirimusume is MIT License.
