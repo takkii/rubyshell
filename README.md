@@ -4,32 +4,33 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)![GitHub release](https://img.shields.io/github/release/takkii/rubyshell.svg?style=flat)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/rubyshell.svg?style=flat)](GitHub)
 
-[ 起動例 ]
+### how to use.
 
-```ruby
+```markdown
 # clone
 git clone https://github.com/takkii/rubyshell.git
 
-# move
-cd rubyshell
+# directory
+cd rubyshell/rubyshell
+cd rubyshell/hakoirimusume
 
 # build
 docker build -t rubyshell .
+docker build -t hakoirimusume .
 
 # run
 docker run -it rubyshell /bin/bash
+docker run -it hakoirimusume /bin/bash
 ```
 
-### コンテナのバージョン毎に構成するRubyなどが違います。
+### docker container
 
-[ 動作確認 & ライセンス & 作成者 ]
+_rubyshell or hakoirimusume change ubuntu version._
 
 ```markdown
 
-Windows 10 ( powershell & WSL & WSL2 ) → ○
-MacOS Catalina → ○
+Windows10,powershell and WSL and WSL2 → ○ build success
+MacOS Catalina → ○ build success
 
-※ rubyshellはMITライセンスです
-
-作成者 Takauki Kamiyama
+※ rubyshell and hakoirimusume is MIT License.
 ```
