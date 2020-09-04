@@ -17,20 +17,27 @@ cd rubyshell/hakoirimusume
 # build
 docker build -t rubyshell .
 docker build -t hakoirimusume .
+docker build -t personal .
 
 # run
 docker run -it rubyshell /bin/bash
 docker run -it hakoirimusume /bin/bash
+docker run -it personal /bin/bash
+
+# exec
+docker exec -it rubyshell /bin/bash --login
+docker exec -it hakoirimusume /bin/bash --login
+docker exec -it personal /bin/bash --login
 ```
 
 ### docker container
 
-_rubyshell or hakoirimusume change ubuntu version._
+_moving os env._
 
 ```markdown
 
 Windows10, powershell and WSL and WSL2 → ○ build success
 MacOS Catalina → ○ build success
 
-※ rubyshell and hakoirimusume is MIT License.
+※ rubyshell is MIT License.
 ```
