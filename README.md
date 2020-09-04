@@ -34,6 +34,12 @@ docker exec -it personal /bin/bash --login
 
 ```markdown
 docker pull takkii/dockerhub:personal
+docker pull takkii/dockerhub:latest
+```
+
+```markdown
+docker run -it takkii/dockerhub:personal /bin/bash
+docker run -it takkii/dockerhub:latest /bin/bash
 ```
 
 [takkii/dockerhub](https://hub.docker.com/r/takkii/dockerhub)
