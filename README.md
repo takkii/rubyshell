@@ -32,7 +32,11 @@ docker exec -it personal /bin/bash --login
 
 ### docker container
 
-_moving os env._
+```markdown
+docker pull takkii/dockerhub:personal
+```
+
+### Env
 
 ```markdown
 
